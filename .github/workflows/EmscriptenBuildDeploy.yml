@@ -21,6 +21,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           GITHUB_TOKEN: $
-          BRANCH: gh-pagesto.
+          BRANCH: gh-pages
           FOLDER: bin/Emscripten 
           CLEAN: true 
