@@ -18,7 +18,7 @@ jobs:
         run: "docker build . -t build_emscripten && docker run -v `pwd`:/app build_emscripten"
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.5.0
+        uses: JamesIves/github-pages-deploy-action@4
         with:
           GITHUB_TOKEN: $
           BRANCH: gh-pagesto.
