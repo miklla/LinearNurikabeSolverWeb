@@ -1046,6 +1046,8 @@ function dbg(text) {
       abort('native code called abort()');
     };
 
+  var _emscripten_date_now = () => Date.now();
+
   var _emscripten_memcpy_js = (dest, src, num) => HEAPU8.copyWithin(dest, src, src + num);
 
   var getHeapMax = () =>
@@ -4493,6 +4495,8 @@ function checkIncomingModuleAPI() {
 var wasmImports = {
   /** @export */
   abort: _abort,
+  /** @export */
+  emscripten_date_now: _emscripten_date_now,
   /** @export */
   emscripten_memcpy_js: _emscripten_memcpy_js,
   /** @export */
