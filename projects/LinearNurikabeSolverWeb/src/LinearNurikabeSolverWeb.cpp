@@ -7,6 +7,9 @@ using namespace std;
 
 int main()
 {
-	cout << "Hello CMake. 3" << endl;
+    long r = 0;
+    for (long i = 0; i < 10000; ++i)
+        r += i;
+	cout << "Hello CMake. " << r << endl;
 	return 0;
 }
